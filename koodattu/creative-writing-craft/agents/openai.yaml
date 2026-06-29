@@ -1,0 +1,7 @@
+interface:
+  display_name: "Creative Writing Craft"
+  short_description: "Write, critique, and revise creative prose with stronger voice and less AI slop"
+  default_prompt: "Use $creative-writing-craft to improve this creative draft. Preserve voice, cut generic AI phrasing, and make it more specific, vivid, and controlled."
+
+policy:
+  allow_implicit_invocation: false
