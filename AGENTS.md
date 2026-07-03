@@ -8,6 +8,8 @@ Prefer small, simple, reviewable, verified changes. Do not optimize for cleverne
 
 For trivial tasks, use judgment and proceed directly. Not every task needs a plan. For complex, ambiguous, risky, or multi-file work, follow the workflow below.
 
+If the user invokes a skill, even if it is not visible in the session, read it still and use it.
+
 ## 1. Think Before Coding
 
 Do not assume silently.
