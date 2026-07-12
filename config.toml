@@ -1,0 +1,225 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "ultra"
+personality = "pragmatic"
+service_tier = "default"
+
+#model_instructions_file = "C:\\Users\\Juha\\.codex\\fixed-model-instructions.md"
+model_context_window = 272000
+
+notify = [ "C:\\Users\\Juha\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\ecfc0d9aa02807e3\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
+
+[marketplaces.openai-bundled]
+last_updated = "2026-07-12T07:09:02Z"
+source_type = "local"
+source = '\\?\C:\Users\Juha\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[windows]
+sandbox = "elevated"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\clevoy-monorepo"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\vaarattu.tv"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\twitch-spotify-song-request"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\wow-guild-progress-tracker"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\ai-workshop-playground"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\generative-imagining"]
+trust_level = "trusted"
+
+[projects."c:\\users\\juha\\desktop\\projektit\\prompt-quest"]
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\trepo-analytics']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\instafix-main']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\loonstagram']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\transcribe-yt-vid']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\unity-3d-ai-assistant']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\whatsapp-ai-chatbot']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-06-15\mcpservers-ruoka-command-bun-args-run']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\mcp-ruoka']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-06-15\files-mentioned-by-the-user-lindahls']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\wow-addon-dev']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\ala-ranta.la']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-06-21\i-wa']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\hiring-agent']
+trust_level = "trusted"
+
+[projects.'e:\projektit\niilo22-dev']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\projects']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\nettiauto-analytics']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-01\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-03\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-03\wha']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-03\can']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\twitch-tracker']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-07\please-run-a-5-shot-local']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\ai-vaarabot-ttv']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\documents\codex\2026-07-10\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\video-generator']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\highlight-clipper']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\gymbuddy']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\shy-eyes-food-app']
+trust_level = "trusted"
+
+[projects.'c:\users\juha\desktop\projektit\live-voting-visualization']
+trust_level = "trusted"
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
+
+[mcp_servers.context7.env]
+CONTEXT7_API_KEY = "ctx7sk-a3dff25e-c51c-436d-b3dc-844baaeb3103"
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+[mcp_servers.dart]
+command = "dart"
+args = ["mcp-server", "--force-roots-fallback"]
+enabled = false
+
+[mcp_servers.dart.tools.read_package_uris]
+approval_mode = "approve"
+
+[mcp_servers.dart.tools.rip_grep_packages]
+approval_mode = "approve"
+
+[mcp_servers.dart.tools.roots]
+approval_mode = "approve"
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\Juha\AppData\Local\OpenAI\Codex\runtimes\cua_node\ecfc0d9aa02807e3\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\Juha\AppData\Local\OpenAI\Codex\runtimes\cua_node\ecfc0d9aa02807e3\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\Juha\AppData\Local\OpenAI\Codex\runtimes\cua_node\ecfc0d9aa02807e3\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\Juha\.codex'
+CODEX_HOME = 'C:\Users\Juha\.codex'
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7ed52dae165c3bc22b6d24f282e2c1fbc87f6949fbbe037767a7418d8f517f01,c8b7e809d7cf9e20a57123b2530d476ccec9a01a6230a7b2b924fea7d94d7f4a"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.707.31428"
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-3c33f3d6-abe7-42cc-9c5f-183f7589db2f'
+CODEX_CLI_PATH = 'C:\Users\Juha\AppData\Local\OpenAI\Codex\bin\a7c12ebff69fb123\codex.exe'
+
+[mcp_servers.markitdown]
+command = "uvx"
+args = ["markitdown-mcp"]
+enabled = true
+
+[mcp_servers.markitdown.tools.convert_to_markdown]
+approval_mode = "approve"
+
+[mcp_servers.ruoka]
+command = "bun"
+args = ["run", "C:/Users/Juha/Desktop/Projektit/mcp-ruoka/src/index.ts", "--stdio"]
+enabled = false
+
+[mcp_servers.wow_api]
+command = "cmd"
+args = ["/c", "npx", "wow-api-mcp"]
+enabled = false
+
+[desktop]
+ambient-suggestions-enabled = false
+conversationDetailMode = "STEPS_COMMANDS"
+keepRemoteControlAwakeWhilePluggedIn = true
+show-context-window-usage = true
+composerEnterBehavior = "cmdIfMultiline"
+hotkey-window-projectless-default-enabled = true
+microphoneInputDeviceId = "350bf457efb01cf0c74e70b6034e58fcf76d358db3b4ff6bfcf2762c04b9a3d3"
+selected-avatar-id = "bsod"
+followUpQueueMode = "queue"
+avatar-overlay-mascot-width-px = 181
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+
+[features]
+remote_connections = true
+js_repl = false
+
+[[skills.config]]
+path = "C:\\Users\\Juha\\.codex\\skills\\.system\\imagegen\\SKILL.md"
+enabled = false
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[tui.model_availability_nux]
+"gpt-5.5" = 2
+
+[agents]
+max_threads = 6
+max_depth = 1
