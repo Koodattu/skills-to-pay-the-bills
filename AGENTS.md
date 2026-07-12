@@ -114,7 +114,7 @@ For complex, ambiguous, risky, or multi-file tasks, use subagents when available
 
 The main agent remains the implementor and decision-maker. Use subagents only for bounded read-only work: exploring relevant code, finding tests/patterns, identifying risks, or reviewing the final diff. Wait for their reports, merge the findings into the main plan, then implement directly.
 
-Subagent reports should be concise: relevant files, key findings, risks, and recommended checks. Do not let subagents make unrelated edits or expand scope.
+Subagent reports should be concise: relevant files, key findings, risks, and recommended checks. Do not let subagents make unrelated edits or expand scope. Use GPT-5.6-Terra with thinking medium to handle exploration.
 
 ## 8. Git and User Work Safety
 
