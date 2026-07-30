@@ -1,0 +1,73 @@
+[
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "I want to make a video about why software projects keep becoming overengineered. Give me angles first; do not write the script yet.",
+    "files": [],
+    "expected_behavior": [
+      "Returns exactly five materially distinct angles and then stops",
+      "Each angle includes a working title, viewer promise, central question or tension, proposed opening line, story engine, and a reason the concept earns its duration",
+      "Does not draft a complete voiceover or pad the response with general scripting advice",
+      "Avoids five cosmetic variants of the same thesis"
+    ]
+  },
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "Write a 10-minute narrative YouTube voiceover explaining how a tiny configuration error can cascade into a major cloud outage. The audience is technically curious but not made of infrastructure engineers. Treat it as a causal explainer, use fictionalized generic examples rather than claiming a specific real outage, and end on one clean takeaway.",
+    "files": [],
+    "expected_behavior": [
+      "Opens immediately with a concrete failure, consequence, or mechanism-shaped tension rather than a greeting or topic announcement",
+      "Establishes the viewer promise and stakes within roughly the first 30 seconds",
+      "Uses a causal chain with complications and partial payoffs rather than a list of cloud concepts",
+      "Keeps technical language understandable on first hearing and defines necessary jargon just in time",
+      "Does not invent attribution to real companies or present the fictionalized example as a documented event",
+      "Produces a plausible spoken length for approximately 10 minutes and ends without a long recap"
+    ]
+  },
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "Write a 52-second YouTube Short explaining why metal feels colder than wood even when both have been in the same room all night. Voiceover only. No call to action.",
+    "files": [],
+    "expected_behavior": [
+      "Names the concrete phenomenon in the first spoken line and gives an immediate reason to continue",
+      "Uses one central explanatory spine: heat transfer rather than temperature alone",
+      "Includes a concise demonstration, comparison, or mechanism and a clear payoff before the final line",
+      "Contains no greeting, stop-scrolling language, generic tease, or call to action",
+      "Fits a natural approximately 52-second read rather than relying on implausibly fast delivery"
+    ]
+  },
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "Rewrite this opening for a documentary-style video without changing the known facts: 'Hey guys, welcome back. In today's video we're going to explore the fascinating story of the expedition. What happened next changed everything. The team entered the valley on October 4. Their radio failed six hours later. Overnight temperatures fell below freezing.' Explain the highest-impact problems briefly, then give the revision.",
+    "files": [],
+    "expected_behavior": [
+      "Identifies the generic preamble, vague suspense, and delayed concrete stakes as the main problems",
+      "Preserves the supplied date, radio-failure timing, and temperature fact without adding invented scene details or motives",
+      "Rewrites the opening around a specific situation, pressure, or question",
+      "Keeps the diagnosis prioritized and concise"
+    ]
+  },
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "Turn the attached 10-minute script into one 45-second Short. Do not summarize the whole video. Select the strongest self-contained moment and rebuild it with a hook, turn, and payoff.",
+    "files": ["long-form-script.md"],
+    "expected_behavior": [
+      "Selects one causally complete moment, mechanism, reversal, or result rather than compressing every section",
+      "Creates a new short-form opening appropriate to a feed environment",
+      "Preserves the chosen moment's essential facts and causal link",
+      "Delivers the payoff before any optional call to action",
+      "Does not frame the output as a chapter-by-chapter summary"
+    ]
+  },
+  {
+    "skills": ["writing-youtube-narratives"],
+    "query": "Using the supplied sources, write a 9-minute historical voiceover. The sources disagree about whether the final decision was made on Monday or Tuesday, and none contains dialogue from the private meeting.",
+    "files": ["source-a.md", "source-b.md", "source-c.md"],
+    "expected_behavior": [
+      "Preserves or explicitly narrows the Monday-versus-Tuesday uncertainty rather than choosing a date silently",
+      "Does not invent dialogue, private thoughts, motives, or scene details from the meeting",
+      "Uses the disagreement only when it is narratively or factually relevant",
+      "Keeps citations or verification notes separate from the spoken voiceover unless spoken attribution is needed",
+      "Still produces a coherent narrative rather than turning the script into a source review"
+    ]
+  }
+]
