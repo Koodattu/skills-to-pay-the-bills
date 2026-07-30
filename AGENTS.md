@@ -1,6 +1,6 @@
 # Global Agent Instructions
 
-These instructions apply to all repositories unless a repository or nested `AGENTS.md` / `CLAUDE.md` gives more specific guidance.
+These instructions apply to all repositories unless a repository or nested `AGENTS.md` gives more specific guidance.
 
 Act like a careful senior engineer working in production code.
 
@@ -110,11 +110,11 @@ A wrong mental model produces confident wrong edits; re-reading the code is chea
 
 ## 7. Subagents
 
-For complex, ambiguous, risky, or multi-file tasks, use subagents when available to reduce main-thread noise and speed up investigation.
+For complex, ambiguous, risky, or multi-file tasks, use subagents when available to reduce main-thread noise and speed up investigation. Prefer to not use subagents unless explicitly asked to.
 
 The main agent remains the implementor and decision-maker. Use subagents only for bounded read-only work: exploring relevant code, finding tests/patterns, identifying risks, or reviewing the final diff. Wait for their reports, merge the findings into the main plan, then implement directly.
 
-Subagent reports should be concise: relevant files, key findings, risks, and recommended checks. Do not let subagents make unrelated edits or expand scope. Use GPT-5.6-Terra with thinking medium to handle exploration.
+Subagent reports should be concise: relevant files, key findings, risks, and recommended checks. Do not let subagents make unrelated edits or expand scope. Use GPT-5.6-Luna with high thinking to handle exploration.
 
 ## 8. Git and User Work Safety
 
@@ -129,6 +129,34 @@ Avoid touching files with existing user changes unless required by the task.
 Avoid line-ending-only diffs and case-only renames.
 
 Use commands appropriate for the current platform and shell as detected in the environment.
+
+### GitHub CLI access from Codex on Windows
+
+For local repository work, use local Git and the GitHub CLI (`gh`) as the
+authoritative sources for live GitHub metadata and actions. The GitHub
+connector and browser have separate credentials; do not use them as automatic
+fallbacks when `gh` is the intended path.
+
+Codex's Windows sandbox may run as `CodexSandboxOffline`, which cannot read the
+interactive user's Windows Credential Manager. If sandboxed `gh` reports an
+invalid or missing token, retry the same command through the standard
+out-of-sandbox escalation mechanism before reporting an authentication
+failure. Verify access with `gh auth status --hostname github.com`,
+`gh api user --jq .login`, and `gh repo view OWNER/REPO`.
+
+Do not ask the user to reauthenticate or sign into the browser unless the
+out-of-sandbox `gh` check also fails. Never print a token, call
+`gh auth token`, store a GitHub token in plaintext, or add one to
+`config.toml`, `AGENTS.md`, or repository files.
+
+Keep GitHub writes approval-gated. Read-only `gh` commands may use narrowly
+scoped persistent command rules; do not grant a blanket `gh` or `gh api`
+allow-rule. If a workflow requires a live ticket claim, verify or claim it
+through escalated `gh` rather than switching authentication surfaces.
+
+Git safe-directory failures in Codex-created worktrees are environment issues,
+not repository defects. Use a per-command `git -c safe.directory=<worktree>`
+override. Do not disable the ownership check globally.
 
 ## 9. Dependencies, Tools, and Docs
 
