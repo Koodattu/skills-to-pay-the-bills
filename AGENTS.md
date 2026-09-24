@@ -36,9 +36,20 @@ implementations and follow repository conventions.
 Avoid unrequested features, single-use abstractions, premature configurability,
 irrelevant defensive code, and broad rewrites.
 
-Touch only what the task requires. Do not refactor, reformat, rename, or remove
-unrelated code. Clean up anything made obsolete by your changes. Mention material
-unrelated issues separately.
+While editing, make small, behavior-preserving cleanups in the functions or
+blocks already being changed when there is a concrete benefit to readability
+or maintenance. Examples include simplifying redundant logic, clarifying local
+names, correcting stale comments, and removing code proven unused.
+
+Keep cleanup easy to review alongside the requested change. Do not expand into
+unrelated code, broad formatting, architectural changes, or speculative
+abstractions. Being in the same file does not make a change related.
+
+Remove anything made obsolete by your changes. Verify any additional cleanup
+with appropriate checks; if preserving behavior is uncertain, leave it alone.
+Mention worthwhile larger improvements and material unrelated issues separately
+without blocking completion. Do not manufacture cleanup work when the code is
+already clear.
 
 Do not change public APIs, data models, migrations, authentication, billing,
 permissions, or deployment behavior without clear user intent.
